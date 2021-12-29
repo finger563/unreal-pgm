@@ -21,3 +21,16 @@ Here is an example of the current (very beta) version of that system:
 
 Here is that same scene, but in wireframe mode:
 ![Wireframe PGM](./images/wireframe_pgm.png)
+
+## TODO
+
+* Better ray-sphere intersection calculation to move the vertices of near-misses onto the sphere for smoother sphere edge without needing to drastically increase the resolution of the particle grid
+* Better management of particle spawning to remove motion blur and ensure that it updates frequently enough
+* Better calculation of normal / tangent vectors (since they seem to be .... not so great...)
+* Update to affect lighting (since right now the particles (and thus the sphere) don't affect the lighting in the scene / don't cast shadows)
+* Texture mapping onto the sphere
+* Height mapping / displacement onto the sphere (texture lookup)
+* Conversion of height map into TSDF for use in ray-sphere ray-sdf intersection calculation
+* Addition of atmosphere shader / integration with UE atmosphere system?
+* Addition of water shader / integration with UE water system?
+* Addition of clouds / integration with UE cloud system?
